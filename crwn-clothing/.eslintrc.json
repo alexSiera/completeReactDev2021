@@ -36,7 +36,7 @@
 
 		"react/require-default-props": "off",
 		"react/forbid-prop-types": "off",
-		"react/jsx-filename-extension": ["error", { "extensions": "['.js']" }],
+		"react/jsx-filename-extension": "off",
 
 		"prefer-destructuring": "off",
 
@@ -55,6 +55,6 @@
 			}
 		],
 
-		"prettier/prettier": ["error"]
+		"prettier/prettier": "off"
 	}
 }
