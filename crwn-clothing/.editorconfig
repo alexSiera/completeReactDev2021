@@ -1,6 +1,3 @@
-# EditorConfig - это замечательно: http://EditorConfig.org
-
-# Файл EditorConfig верхнего уровня
 root = true
 
 [*.md]
