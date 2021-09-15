@@ -27,7 +27,7 @@
 		"no-plusplus": "off",
 		"space-before-function-paren": 0,
 
-		"max-len": ["error", 100, 2, { "ignoreUrls": true }],
+		"max-len": "off",
 		"no-console": "error",
 		"no-alert": "error",
 
@@ -60,6 +60,7 @@
 		"jsx-a11y/interactive-supports-focus": "off",
 		"jsx-a11y/click-events-have-key-events": "off",
 		"jsx-a11y/no-static-element-interactions": "off",
-		"react/jsx-props-no-spreading": "off"
+		"react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": "off"
 	}
 }
