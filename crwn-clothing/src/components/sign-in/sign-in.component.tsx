@@ -1,3 +1,5 @@
+import CustomButton from 'components/custom-button/custom-button.component';
+import FormInput from 'components/form-input/form-input.component';
 import React, { FormEvent, useState } from 'react';
 import './sign-in.styles.scss';
 
@@ -19,11 +21,11 @@ const SignIn = () => {
     <h2>I already have an account</h2>
     <span>Sign in with your email and password</span>
     <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email</label>
-      <input id="email" type="email" name="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} required />
-      <label htmlFor="password">Password</label>
-      <input id="password" name="password" value={formData.password} onChange={(e) => setFormData({...formData, password: e.target.value})} required />
-      <input type="submit" value="Submit Form" />
+      <FormInput id="email" type="email" name="email" label="email" placeholder="email" value={formData.email} handleChange={(e: { target: { value: any; }; }) => setFormData({...formData, email: e.target.value})} required />
+      <FormInput id="password" type="password" name="password" placeholder="password" label="password" value={formData.password} handleChange={(e) => setFormData({...formData, password: e.target.value})} required />
+      <CustomButton type="submit">
+        Sign In
+      </CustomButton>
     </form>
   </div>
   )
